@@ -97,7 +97,7 @@ Options:
   -p, --path <dir>       Path to directory to scan
   -o, --output <file>    Output SVG file (default: tree.svg)
   -t, --title <text>     Title for the diagram
-  --no-title             Hide the title header
+  --no-title             Hide the title header (more compact)
   --theme <name>         Theme: github-dark (default) or github-light
   -d, --depth <number>   Maximum depth to scan (default: 5)
   -h, --help             Show this help

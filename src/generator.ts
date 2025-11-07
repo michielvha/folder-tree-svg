@@ -150,6 +150,7 @@ ${connections.map(conn => `    <path class="line" d="M${conn.from.x},${conn.from
 ${layouts.map(layout => {
     const nodeClass = layout.node.type === 'folder' ? 'node-folder' : 'node-file';
     const icon = layout.node.type === 'folder' ? '📁' : '📄';
+    
     return `    <g>
       <rect class="${nodeClass}" x="${layout.x}" y="${layout.y - nodeHeight / 2}" width="${layout.width}" height="${nodeHeight}" rx="10"/>
       <text class="label" x="${layout.x + 16}" y="${layout.y + 5}">${icon} ${escapeXml(layout.node.name)}</text>
