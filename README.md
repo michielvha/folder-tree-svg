@@ -90,3 +90,7 @@ See `examples/` folder for generated SVGs:
 - `kustomize-tree.svg` - JSON-based structure
 - `real-folder-example.svg` - Scanned from actual folder
 
+## TODO
+
+- [ ] Add custom icons based on file extensions (e.g., TypeScript, JavaScript, YAML, JSON icons)
+
