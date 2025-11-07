@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="924" viewBox="0 0 1200 924" role="img" aria-labelledby="title desc">
+  <title id="title">Kustomize Repository Structure</title>
+  <desc id="desc">Folder structure visualization</desc>
+  <defs>
+    <style>
+      .card { fill: #161b22; stroke: #30363d; stroke-width: 1; }
+      .title { font: 700 32px ui-sans-serif, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; fill: #f0f6fc; }
+      .label { font: 600 15px ui-sans-serif, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; fill: #c9d1d9; }
+      .line { stroke: #30363d; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+      .node-folder { fill: #1f6feb; stroke: #58a6ff; stroke-width: 1.5; }
+      .node-file { fill: #238636; stroke: #3fb950; stroke-width: 1.5; }
+      .dot { fill: #58a6ff; stroke: #1f6feb; stroke-width: 1.5; }
+      .node-folder, .node-file { filter: url(#nodeGlow); }
+    </style>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background card -->
+  <rect class="card" x="28" y="28" width="1144" height="868" rx="20" filter="url(#shadow)"/>
+  
+  <!-- Title -->
+  <text class="title" x="70" y="95">Kustomize Repository Structure</text>
+
+  <!-- Connections -->
+  <g>
+    <path class="line" d="M213,160 L243,160"/>
+    <path class="line" d="M243,160 L243,650"/>
+    <path class="line" d="M243,160 L270,160"/>
+    <path class="line" d="M243,650 L270,650"/>
+    <path class="line" d="M360,160 L390,160"/>
+    <path class="line" d="M390,160 L390,370"/>
+    <path class="line" d="M390,160 L450,160"/>
+    <path class="line" d="M390,370 L450,370"/>
+    <path class="line" d="M540,160 L570,160"/>
+    <path class="line" d="M570,160 L570,300"/>
+    <path class="line" d="M570,160 L630,160"/>
+    <path class="line" d="M570,230 L630,230"/>
+    <path class="line" d="M570,300 L630,300"/>
+    <path class="line" d="M564,370 L594,370"/>
+    <path class="line" d="M594,370 L594,580"/>
+    <path class="line" d="M594,370 L630,370"/>
+    <path class="line" d="M594,510 L630,510"/>
+    <path class="line" d="M594,580 L630,580"/>
+    <path class="line" d="M720,370 L750,370"/>
+    <path class="line" d="M750,370 L750,440"/>
+    <path class="line" d="M750,370 L810,370"/>
+    <path class="line" d="M750,440 L810,440"/>
+    <path class="line" d="M735,510 L765,510"/>
+    <path class="line" d="M765,510 L810,510"/>
+    <path class="line" d="M762,580 L792,580"/>
+    <path class="line" d="M792,580 L810,580"/>
+    <path class="line" d="M360,650 L390,650"/>
+    <path class="line" d="M390,650 L390,720"/>
+    <path class="line" d="M390,650 L450,650"/>
+    <path class="line" d="M390,720 L450,720"/>
+    <path class="line" d="M540,650 L570,650"/>
+    <path class="line" d="M570,650 L630,650"/>
+    <path class="line" d="M564,720 L594,720"/>
+    <path class="line" d="M594,720 L594,790"/>
+    <path class="line" d="M594,720 L630,720"/>
+    <path class="line" d="M594,790 L630,790"/>
+  </g>
+
+  <!-- Nodes -->
+  <g>
+    <g>
+      <rect class="node-folder" x="90" y="141" width="123" height="38" rx="10"/>
+      <text class="label" x="106" y="165">📁 manifests</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="270" y="141" width="90" height="38" rx="10"/>
+      <text class="label" x="286" y="165">📁 app1</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="450" y="141" width="90" height="38" rx="10"/>
+      <text class="label" x="466" y="165">📁 base</text>
+    </g>
+    <g>
+      <rect class="node-file" x="630" y="141" width="204" height="38" rx="10"/>
+      <text class="label" x="646" y="165">📄 kustomization.yaml</text>
+    </g>
+    <g>
+      <rect class="node-file" x="630" y="211" width="177" height="38" rx="10"/>
+      <text class="label" x="646" y="235">📄 deployment.yaml</text>
+    </g>
+    <g>
+      <rect class="node-file" x="630" y="281" width="150" height="38" rx="10"/>
+      <text class="label" x="646" y="305">📄 service.yaml</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="450" y="351" width="114" height="38" rx="10"/>
+      <text class="label" x="466" y="375">📁 overlays</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="630" y="351" width="90" height="38" rx="10"/>
+      <text class="label" x="646" y="375">📁 dev</text>
+    </g>
+    <g>
+      <rect class="node-file" x="810" y="351" width="204" height="38" rx="10"/>
+      <text class="label" x="826" y="375">📄 kustomization.yaml</text>
+    </g>
+    <g>
+      <rect class="node-file" x="810" y="421" width="132" height="38" rx="10"/>
+      <text class="label" x="826" y="445">📄 patch.yaml</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="630" y="491" width="105" height="38" rx="10"/>
+      <text class="label" x="646" y="515">📁 staging</text>
+    </g>
+    <g>
+      <rect class="node-file" x="810" y="491" width="204" height="38" rx="10"/>
+      <text class="label" x="826" y="515">📄 kustomization.yaml</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="630" y="561" width="132" height="38" rx="10"/>
+      <text class="label" x="646" y="585">📁 production</text>
+    </g>
+    <g>
+      <rect class="node-file" x="810" y="561" width="204" height="38" rx="10"/>
+      <text class="label" x="826" y="585">📄 kustomization.yaml</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="270" y="631" width="90" height="38" rx="10"/>
+      <text class="label" x="286" y="655">📁 app2</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="450" y="631" width="90" height="38" rx="10"/>
+      <text class="label" x="466" y="655">📁 base</text>
+    </g>
+    <g>
+      <rect class="node-file" x="630" y="631" width="204" height="38" rx="10"/>
+      <text class="label" x="646" y="655">📄 kustomization.yaml</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="450" y="701" width="114" height="38" rx="10"/>
+      <text class="label" x="466" y="725">📁 overlays</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="630" y="701" width="90" height="38" rx="10"/>
+      <text class="label" x="646" y="725">📁 dev</text>
+    </g>
+    <g>
+      <rect class="node-folder" x="630" y="771" width="132" height="38" rx="10"/>
+      <text class="label" x="646" y="795">📁 production</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "name": "folder-tree-svg",
+  "version": "1.0.0",
+  "description": "Generate beautiful SVG visualizations of folder structures with GitHub dark theme",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "folder-tree-svg": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "svg",
+    "folder-structure",
+    "tree",
+    "visualization",
+    "github"
+  ],
+  "author": "michielvha",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}

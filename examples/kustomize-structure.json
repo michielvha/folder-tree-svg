@@ -1,0 +1,100 @@
+{
+  "name": "manifests",
+  "type": "folder",
+  "children": [
+    {
+      "name": "app1",
+      "type": "folder",
+      "children": [
+        {
+          "name": "base",
+          "type": "folder",
+          "children": [
+            {
+              "name": "kustomization.yaml",
+              "type": "file"
+            },
+            {
+              "name": "deployment.yaml",
+              "type": "file"
+            },
+            {
+              "name": "service.yaml",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "overlays",
+          "type": "folder",
+          "children": [
+            {
+              "name": "dev",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "kustomization.yaml",
+                  "type": "file"
+                },
+                {
+                  "name": "patch.yaml",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "staging",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "kustomization.yaml",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "production",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "kustomization.yaml",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "app2",
+      "type": "folder",
+      "children": [
+        {
+          "name": "base",
+          "type": "folder",
+          "children": [
+            {
+              "name": "kustomization.yaml",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "overlays",
+          "type": "folder",
+          "children": [
+            {
+              "name": "dev",
+              "type": "folder"
+            },
+            {
+              "name": "production",
+              "type": "folder"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
